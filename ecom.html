@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Shoes E-commerce by Deepak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 15px 30px;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo h1{
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        .nav-bar ul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar li{
+            margin-left: 20px;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .nav-bar a:hover{
+            color: #ffdd57;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
+        }
+        nav a:hover {
+            background-color: #888383;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .product-card {
+            width: calc(33.333% - 20px);
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            margin: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .product-card button {
+            background-color: #0044cc;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #003399;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .merged-division{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+        }
+        .contact-us, .help{
+            width: 48%;
+        }
+        .contact-us h3, .help h3{
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-us p, .help p{
+            margin: 5px 0;
+            color: #666;
+        }
+        .help a{
+            color: #007bff;
+            text-decoration: none;
+        }
+        .help a:hover{
+            text-decoration: underline;
+        }
+        .cart {
+            background-color: #a06c6c;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+    <header class="header">
+        <div class ="logo">
+        <h1>Premium Shoes Mart</h1>
+        </div>
+    
+    <nav class ="nav-bar">
+        <ul>
+      <li><a href="#home">Home</a></li>
+       <li><a href="#contact">Contact Us</a></li>
+       <li><a href="#help">Help</a></li>
+       <li><a href="#cart">Cart</a></li>
+       </ul>
+    </nav>
+</header>
+    <div class="container" id="home">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="MP000000024768453_437Wx649H_202412201822021.avif" alt="Product 1">
+                <h3>Sports Shoe</h3>
+                <p>Price: $59.99</p>
+                <button onclick="addToCart('Sports Shoe ')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="MP000000024522787_437Wx649H_202411270050461.avif"alt="Product 2">
+                <h3>Sneaker Shoes</h3>
+                <p>Price: $69.99</p>
+                <button onclick="addToCart('Sneaker shoe')">Add to Cart</button>
+            </div>
+           
+            <div class="product-card">
+                <img src="MP000000020978182_437Wx649H_202402010612071.avif" alt="Product 3">
+                <h3>Formal Shoe 3</h3>
+                <p>Price: $79.99</p>
+                <button onclick="addToCart('formal Shoe')">Add to Cart</button>
+            </div> 
+           
+            <div class="product-card">
+                <img src="MP000000023504107_437Wx649H_202409010851466.avif" alt="Product 4">
+                <h3>High top Sneaker</h3>
+                <p>Price: $89.99</p>
+                <button onclick="addToCart(' Shoe 4')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="MP000000016261235_437Wx649H_202308300505351.avif" alt="Product 5">
+                <h3>Premium Boot</h3>
+                <p>Price: $89.99</p>
+                <button onclick="addToCart('Shoe 5')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shoe_180424_11853_1.jpg" alt="Product 6">
+                <h3>Monster shoe</h3>
+                <p>Price: $99.99</p>
+                <button onclick="addToCart('Shoe 6')">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="merged-division">
+        <div class="contact-us">
+        <h3>Contact Us</h3>
+        <p>Email: support@shoesmart.com</p>
+        <p>Phone: +91 99745362XX</p>
+    </div>
+    <div class="help">
+        <h3>Help</h3>
+        <p>If you have any questions, visit our <a href="#">FAQ</a> or <a href="#">Support Page</a>.</p>
+    </div>
+    </div>
+    <div class="container cart" id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems">
+            <li>Your cart is empty.</li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2024 Premium Shoes E-commerce. All Rights Reserved.
+    </footer>
+    <script>
+        const cart = [];
+
+        function addToCart(productName) {
+            cart.push(productName);
+            updateCart();
+            alert(`${productName} has been added to your cart!`);
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            cartItems.innerHTML = '';
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<li>Your cart is empty.</li>';
+            } else {
+                cart.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    cartItems.appendChild(li);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
